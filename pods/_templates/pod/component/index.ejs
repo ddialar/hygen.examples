@@ -1,0 +1,7 @@
+---
+inject: true
+append: true
+to: <%=`${cwd}/src/pods/${podName}/components/index.ts`%>
+skip_if: <%=podComponentName%>
+---
+export * from './<%=podComponentName%>';

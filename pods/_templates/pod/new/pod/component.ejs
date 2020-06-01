@@ -1,0 +1,13 @@
+---
+to: <%=cwd%>/src/pods/<%=podName%>/<%=podName%>.component.tsx
+---
+import React from 'react';
+import type { Theme } from '@/core/theme';
+import {  } from './components';
+import {  } from './<%=podName%>.vm';
+
+interface <%=h.changeCase.pascal(podName)%>Props {}
+
+export const <%=h.changeCase.pascal(podName)%>Component: React.FC<%-`<${h.changeCase.pascal(podName)}Props>`%> = ({}) => (
+    <%-`<></>`%> 
+);
