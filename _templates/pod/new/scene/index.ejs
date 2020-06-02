@@ -1,9 +1,7 @@
 ---
-fileExists: <%=h.doesFileExist(`${cwd}/src/scenes/index.ts`)%> 
-
-inject: fileExists
-append: fileExists
+inject: true
+append: true
 skip_if: <%=podName%>.scene
-to: <%=cwd%>/src/scenes/index.ts
+to: "<%=createPodScene ? `${cwd}/src/scenes/index.ts` : null%>"
 ---
 export * from './<%=podName%>.scene';

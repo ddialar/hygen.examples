@@ -2,8 +2,8 @@
 to: "<%= createPodScene ? `${cwd}/src/scenes/${podName}.scene.tsx` : null%>"
 ---
 import React from 'react';
-import { Container } from '@/common/components';
-import { <%=h.changeCase.pascal(podName)%>Container } from '@/pods/<%=podName%>';
+import { Container } from '<%=h.context().alias.common%>/components';
+import { <%=h.changeCase.pascal(podName)%>Container } from '<%=h.context().alias.pods%>/<%=podName%>';
 
 export const <%=h.changeCase.pascal(podName)%>Scene = () => (
     <Container>

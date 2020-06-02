@@ -1,0 +1,7 @@
+{
+    "alias": {
+        "core": "@/core",
+        "common": "@/common",
+        "pods": "@/pods"
+    }
+}

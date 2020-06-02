@@ -3,9 +3,9 @@ to: <%=cwd%>/src/pods/<%=podName%>/<%=podName%>.container.tsx
 ---
 import React from 'react';
 import { useHistory, generatePath } from 'react-router-dom';
-import { switchRoutes } from '@/core/router';
-import { useTheme } from '@/core/theme';
-import {  } from '@/common/components';
+import { switchRoutes } from '<%=h.context().alias.core%>/router';
+import { useTheme } from '<%=h.context().alias.core%>/theme';
+import {  } from '<%=h.context().alias.common%>/components';
 import {  } from './<%=podName%>.api';
 import {  } from './<%=podName%>.vm';
 import { <%=h.changeCase.pascal(podName)%>Component } from './<%=podName%>.component';
