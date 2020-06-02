@@ -44,3 +44,11 @@ These commands have been defined keeping in mind that you have installed Hygen g
     The process will ask you via CLI, about the PoD's name to introduce the new component as well as its name.
 
     A new file with the most basic component structure will be created into `src/pods/components/` folder and a reference to this file will be injected into the `index.ts` file, located in the `components/` sub-folder.
+
+    ## Configuration file
+
+    In order to get a better flexibility for the templating system, there is a `config.json` file into the root of the `_templates` folder.
+
+    The content of this file is loaded by a helper named `context` and defined into the `.hygen.js` file (located in the root of the project).
+
+    this way it's possible to access the configuration data vía this helper, in any template.
